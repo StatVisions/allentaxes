@@ -28,4 +28,6 @@ completed issues
 ==========
 8-slider: change family slider to drop down
 
-2-error: There is an error when you select a family size and you select an AGI which isn't in the table (i.e. They're at the 100% rate). I also would think you would want the reduction to bring them down to the 9.5% rate.
+2.1-error: There is an error when you select a family size and you select an AGI which isn't in the table (i.e. They're at the 100% rate). 
+
+2.2-reduction: AGI reductions to bring them down to the 9.5% rate for high AGI.
