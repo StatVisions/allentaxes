@@ -31,3 +31,11 @@ completed issues
 2.1-error: There is an error when you select a family size and you select an AGI which isn't in the table 
 
 2.2-reduction: AGI reductions to bring them down to the 9.5% rate for high AGI.(i.e. They're at the 100% rate). 
+
+
+notes
+==========
+1. medicade eligbility is 138% of FPL (2014 tables)
+2. percent levels are not changed.
+3. premiums (2014)
+4. agi (2014 premiums)
