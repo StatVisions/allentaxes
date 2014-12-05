@@ -16,6 +16,8 @@ back log issues
 
 6-region: I need to add region.
 
+10-error: changing household count does not property change bracket
+
 
 completed issues
 ==========
