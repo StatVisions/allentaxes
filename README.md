@@ -36,6 +36,6 @@ completed issues
 notes
 ==========
 1. medicade eligbility is 138% of FPL (2014 tables)
-2. percent levels are not changed.
+2. federal povery level (2014)
 3. premiums (2015)
-4. agi (2014 premiums)
+4. agi (2014)
