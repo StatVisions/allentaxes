@@ -19,9 +19,6 @@ back log issues
 
 6-region: I need to add region.
 
-7-filenames: I'm going to need to change the file names to something that mean something to a tax person or the person who will maintain the thing will be lost next year.
-
-
 
 completed issues
 ==========
@@ -32,6 +29,8 @@ completed issues
 2.2-reduction: AGI reductions to bring them down to the 9.5% rate for high AGI.(i.e. They're at the 100% rate). 
 
 9-Medicade: If AGI is less than 100% then we need something that says “MediCaid Eligible”
+
+7-filenames: I'm going to need to change the file names to something that mean something to a tax person or the person who will maintain the thing will be lost next year.
 
 
 notes
