@@ -12,10 +12,7 @@ back log issues
 
 4-formatting: There needs to be formatting on the numbers.
 
-5-agerange: I need to add age range of primary.
-
-6-region: I need to add region.
-
+11-credit: Add credit calculation
 
 
 
@@ -34,6 +31,10 @@ completed issues
 3-bracket: When a family is in the upper end of the 9.5% bracket. I need to make an adjustment so they drop one more bracket to the 8.05% rate.
 
 10-error: changing household count does not property change bracket
+
+5-agerange: I need to add age range of primary.
+
+6-region: I need to add region.
 
 
 
