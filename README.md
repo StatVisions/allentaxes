@@ -8,10 +8,7 @@ http://statvisions.github.io/allentaxes/
 back log issues
 ==========
 
-
 1-data: There needs to be data for family size greater than 3.
-
-3-bracket: When a family is in the upper end of the 9.5% bracket. I need to make an adjustment so they drop one more bracket to the 8.05% rate.
 
 4-formatting: There needs to be formatting on the numbers.
 
@@ -31,6 +28,9 @@ completed issues
 9-Medicade: If AGI is less than 100% then we need something that says “MediCaid Eligible”
 
 7-filenames: I'm going to need to change the file names to something that mean something to a tax person or the person who will maintain the thing will be lost next year.
+
+3-bracket: When a family is in the upper end of the 9.5% bracket. I need to make an adjustment so they drop one more bracket to the 8.05% rate.
+
 
 
 notes
