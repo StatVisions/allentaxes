@@ -16,7 +16,7 @@ back log issues
 
 6-region: I need to add region.
 
-10-error: changing household count does not property change bracket
+
 
 
 completed issues
@@ -32,6 +32,8 @@ completed issues
 7-filenames: I'm going to need to change the file names to something that mean something to a tax person or the person who will maintain the thing will be lost next year.
 
 3-bracket: When a family is in the upper end of the 9.5% bracket. I need to make an adjustment so they drop one more bracket to the 8.05% rate.
+
+10-error: changing household count does not property change bracket
 
 
 
