@@ -17,15 +17,14 @@
 
 
     <div class="container" role="main"> 
-    		 <div class="page-header">
-  				<h4>ACA Premium Assistance Credit</h4>
+    	<div class="panel panel-primary">
+    		 <div class="panel-heading">
+  				<h3>ACA Premium Assistance Credit Maximizer</h3>
   			</div>
 
+  			 <ul class="list-group">
   			<!-- Calculation Input -->
-
-    		<div class="well">
-				<div class ="row">
-					<div class="col-lg-12">
+				<li class="list-group-item">
 						<label for="householdSize" style="display:inline-block; text-align: left;margin-top:1rem;">
    		    	  		Household Size 
  						</label>
@@ -39,61 +38,79 @@
 							<option value = "7">7</option>
 							<option value = "8">8</option>
 						</select>
-					</div>
-				</div>
+				</li>	
    		   	
-				<div class ="row">
-					<div class="col-lg-12">
+				<li class="list-group-item">
 						<label for="agi" style="display: inline-block; width: 100%; text-align: left;margin-top:1rem;">
-   		 			     AGI 
+   		 			     Adjusted Gross Income
    		 			     <input id="agi" type="number" min="0" max="46680" step ="1000" value="0" style="display:inline-	block;">
  						</label>
-						
-					</div>
-				</div>
+				</li>
 
-			    <div class = "row">
-			    	<div class="col-lg-12">
+			    <li class="list-group-item">
+	
 			    		<label for="agerange" style="display:inline-block;text-align:left;margin-top:1rem;">
 			    		Age Range of Primary
 			    		</label>
 			    		<select id="agerange" style="disp">
 			    		</select>
-			    	</div>
-			    </div>
-				<div class="row">
-					<div class="col-lg-12">
+			    </li>
+
+				<li class="list-group-item">
 						<label for="region" style="display:inline-block;text-align:left;margin-top:1rem;">
 						Region
 						</label>
 						<select id="region" style="disp">
 						</select>
-					</div>
-				</div>
+				</li>
+
+			</ul>
 			    
-			</div>
+		</div>
+
+
 
 			<!-- Calculation Output -->
+			<div class="row">
+				<div class="col-lg-12" id="medicade">
+					<h3 style="margin-top:1rem;margin-bottom:3rem;display:in-line;"><span class="label label-info"><strong>Medi-Cal</strong></span></h3>
+				</div>
+			</div>
 
 			<div class ="row">
 				<div class="col-lg-12">
-					<label for="rate" style="display:block; width: 100%; text-align:left;margin-top:3rem;">
-						Premium Cap <span id="rate-value" style="display:inline-block;">0</span>
-					</label>
+					<div class = "panel panel-info">
+		  				<div class="panel-heading">
+							<label class ="panel-heading" for="rate" style="		display:block; width: 100%; text-align:left;margin-top:1rem;">
+								Premium Cap 
+							</label>
+						</div>
+							<div class="panel-body">
+									<span id="rate-value" style="display:inline-block;">0</span>
+							</div>
+					</div>
 
-					<label for="credit" style="display:block; width: 100%; text-align:left;margin-top:1rem;">
-						Premium Credit <span id="credit-value" style="display:inline-block;">0</span>
-					</label>
+					<div class = "panel panel-info">
+						<div class="panel-heading">
+							<label for="credit" style="display:block; width: 	100%; text-align:left;margin-top:1rem;">
+								Premium Credit</label> 
+						</div>
+						<div class="panel-body">
+							<span id="credit-value" style="	display:inline-block;">0</span>
+						</div>
+					</div>
 
-					<label for="lowerAGI" style="display:block; width:100%; text-align:left;margin-top:1rem;">
-						AGI Reduction for Lower FPL Level: <span id="lowerAGI-value" style="display:inline-block;">0</span>
-					</label>
-				</div>
-			</div>
+					<div class = "panel panel-info">
+						<div class="panel-heading">
+							<label for="lowerAGI" style="display:block; 		width:100%; text-align:left;margin-top:1rem;">
+								AGI Reduction for Lower FPL Level </label>
+						</div> 
+						<div class="panel-body">
+							<span id="	lowerAGI-value" style="display:inline-block;">0</span>
+						</div>
+					</div>
 
-			<div class="row">
-				<div class="col-lg-12" id="medicade">
-					<h3 style="margin-top:3rem;display:in-line;"><span class="label label-info"><strong>Medi-Cal</strong></span></h3>
+
 				</div>
 			</div>
 
@@ -102,6 +119,8 @@
 					<p style="margin-top:3rem;"><button type="button" class="btn btn-warning" onclick="window.location.href='https://github.com/StatVisions/allentaxes/tree/gh-pages'">Source</button>
 				</div>
 			</div>
+
+
 	</div>
 <script>
 	// maxpremcaptable csv is assumed to have the following headers: Size, Low, High, Rate
