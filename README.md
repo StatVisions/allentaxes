@@ -10,9 +10,6 @@ back log issues
 
 1-data: There needs to be data for family size greater than 3.
 
-4-formatting: There needs to be formatting on the numbers.
-
-
 completed issues
 ==========
 8-slider: change family slider to drop down
@@ -34,6 +31,8 @@ completed issues
 6-region: I need to add region.
 
 11-credit: Add credit calculation
+
+4-formatting: There needs to be formatting on the numbers.
 
 
 notes
