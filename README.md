@@ -12,9 +12,6 @@ back log issues
 
 4-formatting: There needs to be formatting on the numbers.
 
-11-credit: Add credit calculation
-
-
 
 completed issues
 ==========
@@ -36,6 +33,7 @@ completed issues
 
 6-region: I need to add region.
 
+11-credit: Add credit calculation
 
 
 notes
