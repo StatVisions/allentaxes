@@ -43,8 +43,13 @@
 				<li class="list-group-item">
 						<label for="agi" style="display: inline-block; width: 100%; text-align: left;margin-top:1rem;">
    		 			     Adjusted Gross Income
-   		 			     <input id="agi" type="number" min="0" max="46680" step ="1000" value="0" style="display:inline-	block;">
+   		 			     <input id="agi" type="number" min="0" max="46680" step ="1000" value="0" style="display:inline-block;">
  						</label>
+
+ 					<div class="alert alert-warning alert-dismissible" role="alert" id="medicade" style="display:none;">
+  						<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  						AGI suggest possible Medi-Cal eligibility
+					</div>
 				</li>
 
 			    <li class="list-group-item">
@@ -63,7 +68,6 @@
 						<select id="region" style="disp">
 						</select>
 				</li>
-
 			</ul>
 			    
 		</div>
@@ -71,11 +75,6 @@
 
 
 			<!-- Calculation Output -->
-			<div class="row">
-				<div class="col-lg-12" id="medicade">
-					<h3 style="margin-top:1rem;margin-bottom:3rem;display:in-line;"><span class="label label-info"><strong>Medi-Cal</strong></span></h3>
-				</div>
-			</div>
 
 			<div class ="row">
 				<div class="col-lg-12">
@@ -90,7 +89,7 @@
 							</div>
 					</div>
 
-					<div class = "panel panel-info">
+					<div class = "panel panel-warning">
 						<div class="panel-heading">
 							<label for="premiumCredit" style="display:block;width:100%; text-align:left;margin-top:1rem;">
 								Premium Credit </label>
@@ -101,7 +100,7 @@
 					</div>
 
 
-					<div class = "panel panel-info">
+					<div class = "panel panel-warning">
 						<div class="panel-heading">
 							<label for="lowerAGI" style="display:block;width:100%; text-align:left;margin-top:1rem;">
 								AGI Reduction for Lower FPL Level </label>
@@ -114,6 +113,10 @@
 
 				</div>
 			</div>
+
+
+
+
 
 			<div class ="row">
 				<div class="col-lg-12">
