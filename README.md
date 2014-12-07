@@ -8,7 +8,7 @@ http://statvisions.github.io/allentaxes/
 back log issues
 ==========
 
-1-data: There needs to be data for family size greater than 3.
+
 
 completed issues
 ==========
@@ -33,6 +33,8 @@ completed issues
 11-credit: Add credit calculation
 
 4-formatting: There needs to be formatting on the numbers.
+
+1-data: There needs to be data for family size greater than 3.
 
 
 notes
