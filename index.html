@@ -68,6 +68,19 @@
 						<select id="region" style="disp">
 						</select>
 				</li>
+				<li class="list-group-item">
+
+					<div class="btn-group">
+  						<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+   				 		options <span class="caret"></span>
+  						</button>
+  						<ul class="dropdown-menu" role="menu">
+  							<li><a href="javascript:show()">Show Details</a></li>
+    						<li><a href="javascript:hide()">Hide Details</a></li>
+  						</ul>
+					</div>
+
+				</li>
 			</ul>
 			    
 		</div>
@@ -78,93 +91,62 @@
 
 			<div class ="row">
 				<div class="col-lg-12">
-
-				 <div class="well">
-
-					<div class = "panel panel-info">
-		  				<div class="panel-heading">
-							<label class ="panel-heading" for="rate" style="display:block; width: 100%; text-align:left;margin-top:1rem;">Monthly Silver Premium
+					<ul class ="list-group">
+						<li class="list-group-item calculation" style="display:none;">
+							<label for="rate" style="display:block; width: 100%; text-align:left;">Monthly Silver Premium
+							</label><span id="SilverPremium" style="display:inline-block;">0</span>
+						</li>
+							
+						<li class="list-group-item calculation" style="display:none;">
+							<label for="rate" style="display:block; width: 100%; text-align:left;">Monthly Silver Premium x 12<sup> (1)</sup>
 							</label>
-						</div>
-							<div class="panel-body">
-									<span id="SilverPremium" style="display:inline-block;">0</span>
-							</div>
-					</div>
-
-					<div class = "panel panel-info">
-		  				<div class="panel-heading">
-							<label class ="panel-heading" for="rate" style="display:block; width: 100%; text-align:left;margin-top:1rem;">Monthly Silver Premium x 12<sup> (1)</sup>
-							</label>
-						</div>
-							<div class="panel-body">
 									<span id="SilverPremiumX12" style="display:inline-block;">0</span>
-							</div>
-					</div>
+						</li>
 
-					<div class = "panel panel-info">
-		  				<div class="panel-heading">
-							<label class ="panel-heading" for="rate" style="display:block; width: 100%; text-align:left;margin-top:1rem;">Premium Cap 
+						<li class="list-group-item">
+							<label for="rate" style="display:block; width: 100%; text-align:left;">Premium Cap 
 							</label>
-						</div>
-							<div class="panel-body">
 									<span id="rate-value" style="display:inline-block;">0</span>
-							</div>
-					</div>
+						</li>
 
-					<div class = "panel panel-info">
-		  				<div class="panel-heading">
-							<label class ="panel-heading" for="rate" style="display:block; width: 100%; text-align:left;margin-top:1rem;">AGI x Premium Cap<sup> (2)</sup> 
+						<li class="list-group-item calculation" style="display:none;">
+							<label for="rate" style="display:block; width: 100%; text-align:left;">AGI x Premium Cap<sup> (2)</sup> 
+							</label><span id="AGIxPremiumCap" style="display:inline-block;">0</span>
+						</li>
+
+						<li class="list-group-item">
+							<label for="premiumCredit" style="display:block;width:100%; text-align:left;">Premium Credit <span class="calculation" style="display:none;"><sup> (1) - (2)</sup> </span>
 							</label>
-						</div>
-							<div class="panel-body">
-									<span id="AGIxPremiumCap" style="display:inline-block;">0</span>
-							</div>
-					</div>
 
-					<div class = "panel panel-info">
-						<div class="panel-heading">
-							<label for="premiumCredit" style="display:block;width:100%; text-align:left;margin-top:1rem;">Premium Credit <sup> (1) - (2)</sup> </label>
-						</div> 
-						<div class="panel-body">
 							<span id="premiumCredit" style="display:inline-block;">0</span>
-						</div>
-					</div>
+						</li>
 
-				</div>
-
-				  <div class ="well">
-					<div class = "panel panel-warning">
-						<div class="panel-heading">
-							<label for="lowerAGI" style="display:block;width:100%; text-align:left;margin-top:1rem;">
+						<li class="list-group-item">
+							<label for="lowerAGI" style="display:block;width:100%; text-align:left;">
 								AGI Reduction for Lower FPL Level </label>
-						</div> 
-						<div class="panel-body">
 							<span id="lowerAGI-value" style="display:inline-block;">0</span>
-						</div>
-					</div>
-				 </div>
-
-
+						</li>	
 				</div>
 			</div>
 
 			<div class="alert alert-warning" role="alert"><strong>Disclaimer</strong> Premium Credit is an estimate only. Actual value may be within 2%-10%.</div>
-
-
-
-
 	
-				<div>Prepared by <a href="http://wwww.statvisions.com">StatVisions</a> for Allen and Allen.</div>
-				<div class="col-lg-12">
-					<p style="margin-top:3rem;"><button type="button" class="btn btn-warning" onclick="window.location.href='https://github.com/StatVisions/allentaxes/tree/gh-pages'">Github</button>
-				</div>
-	
-
-
+			<div>Prepared by <a href="http://wwww.statvisions.com">StatVisions/a> for Allen and Allen.</div>
+			<div class="col-lg-12">
+				<p style="margin-top:3rem;"><button type="button" class="btnbtn-warning" onclick="window.location.href='https://githubcom/StatVisions/allentaxes/tree/gh-pages'">Github</button>
+			</div>
 	</div>
 <script>
 	// maxpremcaptable csv is assumed to have the following headers: Size, Low, High, Rate
 	allen("data/maxpremcaptable.csv","data/silverratetable.csv");
+
+	function show() {
+		d3.selectAll(".calculation").style("display","block");
+	}
+	
+	function hide() {
+		d3.selectAll(".calculation").style("display","none");
+	}
 </script>
 </body>
 </html>
